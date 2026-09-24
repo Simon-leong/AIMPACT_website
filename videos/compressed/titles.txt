@@ -1,0 +1,15 @@
+VID-003.mp4 : CALLME: Context-Aware Language Learning with Multimodal Enhancement
+VID-004.mp4 : Human-AI Songwriter: Co-Creative Music Application for Students' Mental Wellness
+VID-008.mp4 : DubMaster: An LLM-Driven Unified Framework for Multimodal Emotional Text-to-Speech Synthesis
+VID-014.mp4 : Symbolic Music Generation from Graph-Learning-Based Preference Modeling and Textual Queries
+VID-016.mp4 : Jukebox: A Generative Model for Music
+VID-018.mp4 : End-to-End Real-World Polyphonic Piano Audio-to-Score Transcription with Hierarchical Decoding
+VID-020.mp4 : Real-Time Musical Mode Detection with Adaptive Tonic Weighting and Harmonic Context
+VID-021.mp4 : Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech
+VID-022.mp4 : FastSpeech: Fast, Robust and Controllable Text to Speech
+VID-023.mp4 : Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech
+VID-024.mp4 : VALL-E: Neural Codec LM are Zero-Shot TTS Synthesizers
+VID-025.mp4 : XAI-Lyricist: Improving the Singability of AI-Generated Lyrics with Prosody Explanations
+VID-027.mp4 : Audio LM
+VID-028.mp4 : Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech
+VID-034.mp4 : End-to-End Real-World Polyphonic Piano Audio-to-Score Transcription with Hierarchical Decoding

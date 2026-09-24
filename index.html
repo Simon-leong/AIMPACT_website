@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AIMPACT is an evidence-grounded multi-agent framework for automated presentation assessment.">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta property="og:title" content="AIMPACT">
+  <meta property="og:description" content="An Evidence-Grounded Multi-Agent Framework for Automated Presentation Assessment">
+  <meta property="og:type" content="website">
+  <title>AIMPACT: Evidence-Grounded Presentation Assessment</title>
+  <link rel="stylesheet" href="styles.css?v=55">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="AIMPACT home">
+      <span>AIMPACT</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#abstract">Abstract</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#method">Method</a>
+      <a href="#results">Experiments</a>
+      <a href="#human-eval">Human Study</a>
+      <a href="#summary">Conclusion</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="paper-title">
+      <div class="hero-copy">
+        <h1 id="paper-title">AIMPACT</h1>
+        <p class="hero-subtitle">An Evidence-Grounded Multi-Agent Framework for Automated Presentation Assessment</p>
+        <p class="hero-deck">From traceable multimodal evidence to expert-aligned assessment.</p>
+        <div class="hero-actions">
+          <a class="button button-code is-placeholder" href="#" aria-disabled="true" title="Code released upon publication">
+            <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            Code
+          </a>
+          <a class="button button-huggingface is-placeholder" href="#" aria-disabled="true" title="Models released upon publication">
+            <span class="brand-icon huggingface-icon" aria-hidden="true">🤗</span>
+            Hugging Face
+          </a>
+          <a class="button button-dataset is-placeholder" href="#" aria-disabled="true" title="Dataset released upon publication">
+            <svg class="brand-icon drive-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path class="drive-yellow" d="M8.2 3 2.3 13.2l3.2 5.5L11.4 8.5 8.2 3Z"/>
+              <path class="drive-green" d="M8.2 3h6.4l7.1 12.3h-6.4L8.2 3Z"/>
+              <path class="drive-blue" d="M5.5 18.7h11.8l4.4-7.6h-6.4l-2.2 3.8H7.7l-2.2 3.8Z"/>
+            </svg>
+            Dataset
+          </a>
+        </div>
+        <p class="hero-availability">Code, models, and data will be released upon publication.</p>
+      </div>
+
+      <div class="hero-visual" aria-label="A presentation transformed into evidence-linked coaching feedback">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-stage">
+          <div class="stage-screen">
+            <div class="screen-bar"><i></i><i></i><i></i></div>
+            <div class="screen-content">
+              <div class="slide-title"></div>
+              <div class="slide-grid">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="slide-lines"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="presenter">
+            <span class="head"></span><span class="body"></span><span class="arm arm-left"></span><span class="arm arm-right"></span>
+          </div>
+          <div class="floor-line"></div>
+        </div>
+        <div class="signal-card signal-b">
+          <b>PER-DIMENSIONAL FEEDBACK</b>
+          <div class="feedback-row"><span>Fluency</span><em>Clear, confident pacing</em></div>
+          <div class="feedback-row"><span>Non-vocal</span><em>Engage with eye contact</em></div>
+          <div class="feedback-row"><span>Visual design</span><em>Strengthen slide hierarchy</em></div>
+          <span class="card-more" aria-hidden="true">...</span>
+        </div>
+        <div class="score-card">
+          <div class="score-head"><span>Delivery analysis</span><i>3/5</i></div>
+          <div class="score-row"><span>Fluency</span><b style="--score: 78%"></b></div>
+          <div class="score-row"><span>Non-vocal</span><b style="--score: 63%"></b></div>
+          <div class="score-row"><span>Visual design</span><b style="--score: 87%"></b></div>
+          <span class="card-more" aria-hidden="true">...</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#abstract"><span>Scroll to explore</span><i aria-hidden="true">↓</i></a>
+    </section>
+
+    <section class="paper-section abstract-section" id="abstract" aria-labelledby="abstract-title">
+      <div class="section-shell section-grid">
+        <header class="section-heading reveal">
+          <h2 id="abstract-title">Abstract</h2>
+        </header>
+        <div class="abstract-copy reveal">
+          <p>Automated presentation assessment is essential for scalable presentation training and feedback in higher education and workplace settings. Despite recent advances in Multimodal Large Language Models (MLLMs), presentation assessment remains constrained by the direct mapping of heterogeneous multimodal evidence to final assessments, which couples evidence reliability with rubric-based judgment. To address this problem, we introduce <strong>AIMPACT</strong>, an evidence-grounded multi-agent framework for automated presentation assessment. Specifically, we first propose an <strong>Evidence-to-Judgment Multi-Agent Framework (EJMA)</strong> to organize presentation assessment into a two-level hierarchy. At the first level, multimodal observations are converted into a traceable evidence memory and coordinate seven dimension-specific specialist agents through a reliability-guided collaboration graph, forming an evidence-grounded council prior. On this basis, the second level introduces <strong>Rubric-Conditioned Multi-Expert Preference Optimization (RC-MEPO)</strong>, which first learns expert corrections to the council prior and then performs on-policy preference optimization against the confidence-weighted expert score distribution, where controlled rubric perturbations further enforce assessment consistency with the provided scoring rubric. In addition, we construct a <strong>Multi-Expert Presentation Assessment Dataset (MEPA)</strong> that comprises 35 graded classroom presentations with synchronized audio, video, and slides. Five expert instructors independently assessed each presentation across eight rubric dimensions, resulting in 1,400 individual expert judgments. Extensive objective and subjective evaluations show that our method achieves the strongest presentation-level expert alignment among comparable-scale MLLMs and remains competitive with substantially larger proprietary models. Zero-shot evaluations on out-of-domain datasets and additional analyses further demonstrate its ability to generalize to unseen presentation data and different scoring standards.</p>
+        </div>
+
+        <figure class="abstract-figure reveal">
+          <img src="figs/abstract.png?v=2" alt="Comparison of three paradigms for automated presentation assessment" loading="lazy">
+          <figcaption><strong>Figure 1.</strong> Comparison of three paradigms for automated presentation assessment. Feature-based systems rely on engineered multimodal cues and task-specific predictors, whereas direct MLLM evaluators map multimodal inputs directly to final judgments. Our proposed evidence-to-judgment paradigm instead separates multimodal evidence construction from rubric-based judgment.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="paper-section dataset-section" id="dataset" aria-labelledby="dataset-title">
+      <div class="section-shell section-grid">
+        <header class="section-heading reveal">
+          <h2 id="dataset-title">Dataset</h2>
+          <p class="section-lede">The Multi-Expert Presentation Assessment Dataset (MEPA) comprises 35 graded classroom presentations collected in a university course, where students deliver prepared presentations with slides under a common assessment standard.</p>
+        </header>
+
+        <dl class="dataset-stats reveal" aria-label="MEPA dataset statistics">
+          <div class="stat"><dt>Presentations</dt><dd>35</dd></div>
+          <div class="stat"><dt>Total footage</dt><dd>2.81<span>h</span></dd></div>
+          <div class="stat"><dt>Per talk</dt><dd>3.6&ndash;6.4<span>min</span></dd></div>
+          <div class="stat"><dt>Slides</dt><dd>380</dd></div>
+          <div class="stat"><dt>Expert instructors</dt><dd>5</dd></div>
+          <div class="stat"><dt>Rubric dimensions</dt><dd>8</dd></div>
+          <div class="stat"><dt>Dimension-level judgments</dt><dd>1,400</dd></div>
+          <div class="stat"><dt>Panel reliability ICC(2,k)</dt><dd>0.75&ndash;0.93</dd></div>
+        </dl>
+
+        <figure class="dataset-chart dataset-figure reveal">
+          <img src="figs/dataset.png?v=2" alt="Representative multi-expert annotation example" loading="lazy">
+          <figcaption><strong>Figure 2.</strong> Representative multi-expert annotation example with dimension-level scores, confidence ratings, and written feedback.</figcaption>
+        </figure>
+
+        <div class="experiment-label dataset-label reveal"><span>Sample Presentations</span><i></i></div>
+
+        <div class="case-list" id="dataset-cases" aria-busy="true">
+          <!-- Cards are populated from videos/annotations_selected.json by script.js. -->
+        </div>
+
+        <p class="video-disclaimer reveal">All recordings are de-identified for anonymous review. Presenter faces, institutional logos and crests, and any author, affiliation, or copyright text on the slides are masked. The remaining visible content reflects only each presenter's chosen topic and personal interests, and does not reveal author or institutional identity.</p>
+      </div>
+    </section>
+
+    <section class="paper-section method-section" id="method" aria-labelledby="method-title">
+      <div class="section-shell">
+        <header class="section-heading reveal">
+          <h2 id="method-title">Method</h2>
+        </header>
+
+        <figure class="pipeline-figure reveal">
+          <div class="method-placeholder">
+            <img src="figs/method.png?v=2" alt="Overview of the AIMPACT two-level evidence-to-judgment framework" loading="lazy">
+          </div>
+          <figcaption><strong>Figure 3.</strong> Overview of the proposed two-level evidence-to-judgment framework. The first level constructs an evidence-grounded council prior by organizing multimodal observations into traceable evidence and performing reliability-guided multi-round deliberation among specialist agents. The second level applies RC-MEPO to align the council prior with the confidence-weighted expert score distribution under the supplied scoring rubric. The blue, orange, and purple regions denote Multimodal Evidence Extraction, the Multi-Agent Collaboration Graph, and RC-MEPO, respectively.</figcaption>
+        </figure>
+
+        <div class="method-intro reveal">
+          <p>Directly mapping heterogeneous multimodal signals to rubric-based scores entangles measurement noise with scoring decisions. AIMPACT instead separates multimodal evidence construction from subsequent rubric-based judgment through the <strong>Evidence-to-Judgment Multi-Agent Framework (EJMA)</strong>, which organizes multimodal presentation assessment into a two-level hierarchy.</p>
+        </div>
+
+        <div class="method-levels reveal">
+          <article class="method-level">
+            <span class="method-level-tag">Level 1 &middot; Council Prior</span>
+            <h3>Evidence-grounded deliberation</h3>
+            <p>Multimodal Evidence Extraction (MEE) extracts modality-specific signals from synchronized multimodal inputs and organizes the resulting observations into a traceable temporal evidence memory with dimension-specific views. The Multi-Agent Collaboration Graph (MACG) grounds seven specialist agents on these evidence views and coordinates their judgments according to evidence reliability, resolving cross-agent disagreement while retaining unresolved cases as uncertainty to form the council prior.</p>
+          </article>
+          <article class="method-level">
+            <span class="method-level-tag">Level 2 &middot; RC-MEPO</span>
+            <h3>Rubric-conditioned expert alignment</h3>
+            <p>Rubric-Conditioned Multi-Expert Preference Optimization (RC-MEPO) first learns expert corrections to the council prior with supervised fine-tuning, and then performs on-policy preference optimization against the confidence-weighted expert score distribution. Expert-Distribution Alignment (EDA) improves how probability mass is distributed across plausible expert scores, and the Rubric-Following Constraint (RFC) enforces consistency with the supplied rubric when the evaluation standard is made stricter or looser.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="paper-section results-section" id="results" aria-labelledby="results-title">
+      <div class="section-shell section-grid">
+        <header class="section-heading reveal">
+          <h2 id="results-title">Experiments</h2>
+        </header>
+
+        <div class="experiment-label reveal"><span>Model feedback</span><i></i></div>
+        <div class="experiment-cases" id="experiment-cases" aria-busy="true">
+          <!-- Cards are populated from experiments_scores.json by script.js. -->
+        </div>
+        <p class="video-disclaimer reveal">All recordings are de-identified for anonymous review. Presenter faces, institutional logos and crests, and any author, affiliation, or copyright text on the slides are masked. The remaining visible content reflects only each presenter's chosen topic and personal interests, and does not reveal author or institutional identity.</p>
+
+        <div class="experiment-label quant-label reveal"><span>Comparison experiment</span><i></i></div>
+        <div class="comparison-tables">
+          <figure class="paper-table-card reveal">
+            <div class="paper-table-scroll">
+              <table class="comparison-table-one">
+                <thead>
+                  <tr><th rowspan="2">Method</th><th rowspan="2">Params.</th><th colspan="4" scope="colgroup">Single Expert</th><th colspan="4" scope="colgroup">Five Expert Consensus</th></tr>
+                  <tr><th>ρ↑</th><th>MAE↓</th><th>α↑</th><th>SDR→1</th><th>ρ↑</th><th>MAE↓</th><th>α↑</th><th>SDR→1</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Qwen2.5-Omni</th><td>7B</td><td>−0.007 <small>[−0.35,0.35]</small></td><td>1.15</td><td>−0.24</td><td>0.34</td><td>0.073 <small>[−0.28,0.43]</small></td><td>0.91</td><td>−0.37</td><td>0.53</td></tr>
+                  <tr><th>Ola</th><td>7B</td><td>0.131 <small>[−0.19,0.43]</small></td><td>0.75</td><td>0.12</td><td>0.53</td><td>0.295 <small>[0.00,0.55]</small></td><td>0.59</td><td>0.15</td><td>0.82</td></tr>
+                  <tr><th>Baichuan-Omni-1.5</th><td>7B</td><td>0.085 <small>[−0.26,0.42]</small></td><td>0.93</td><td>−0.15</td><td>0.37</td><td>0.281 <small>[−0.09,0.60]</small></td><td>0.63</td><td>−0.34</td><td>0.57</td></tr>
+                  <tr><th>MiniCPM-o-2.6</th><td>8B</td><td>0.215 <small>[−0.07,0.46]</small></td><td>0.71</td><td>0.18</td><td>0.47</td><td>0.147 <small>[−0.20,0.45]</small></td><td>0.65</td><td>0.12</td><td>0.73</td></tr>
+                  <tr><th>MiniCPM-o-4.5</th><td>9B</td><td>0.493 <small>[0.15,0.74]</small></td><td>0.90</td><td>0.03</td><td>0.41</td><td>0.447 <small>[0.08,0.72]</small></td><td>0.61</td><td>−0.09</td><td>0.63</td></tr>
+                  <tr><th>Qwen3-Omni-Instruct</th><td>30B/3B</td><td>0.173 <small>[−0.17,0.49]</small></td><td>0.89</td><td>−0.18</td><td>0.41</td><td>0.323 <small>[0.00,0.60]</small></td><td>0.59</td><td>−0.26</td><td>0.64</td></tr>
+                  <tr><th>Qwen3-Omni-Thinking</th><td>30B/3B</td><td>0.228 <small>[−0.14,0.56]</small></td><td>0.76</td><td>0.28</td><td>0.64</td><td>0.424 <small>[0.10,0.68]</small></td><td>0.55</td><td>0.49</td><td>1.00</td></tr>
+                  <tr><th>Gemini 3.1 Pro†</th><td>–</td><td>0.599 <small>[0.36,0.78]</small></td><td>0.62</td><td>0.56</td><td>0.36</td><td>0.764 <small>[0.56,0.89]</small></td><td>0.39</td><td>0.58</td><td>0.55</td></tr>
+                  <tr><th>Xiaomi MiMo-v2.5†</th><td>–</td><td>0.485 <small>[0.17,0.74]</small></td><td>0.63</td><td>0.47</td><td>0.47</td><td>0.556 <small>[0.25,0.78]</small></td><td>0.47</td><td>0.47</td><td>0.72</td></tr>
+                  <tr class="ours"><th>Ours</th><td>8B</td><td>0.813 <small>[0.61,0.92]</small></td><td>0.55</td><td>0.50</td><td>0.62</td><td>0.875 <small>[0.73,0.93]</small></td><td>0.27</td><td>0.63</td><td>0.76</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <figcaption><strong>Table 1.</strong> In-domain comparison on the MEPA dataset under single-expert and five-expert consensus references. The single-expert reference uses one randomly selected expert, while the five-expert consensus is weighted by the rater confidence scores. Brackets report 95% presentation-level bootstrap confidence intervals, and † denotes proprietary models. For MoE models, Params. report total and active parameter counts. For Ours, it reports the parameter count of the RC-MEPO judge backbone. Best and second-best results are shown in bold and underlined.</figcaption>
+          </figure>
+
+          <figure class="paper-table-card reveal">
+            <div class="paper-table-scroll">
+              <table class="comparison-table-two">
+                <thead>
+                  <tr><th rowspan="2">Method</th><th colspan="4">Cross-Course Evaluation Dataset</th><th colspan="3">SpeechOcean762</th></tr>
+                  <tr><th>r↑</th><th>ρ↑</th><th>τ↑</th><th>Verbosity↓</th><th>r↑</th><th>ρ↑</th><th>τ↑</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Qwen2.5-Omni</th><td>0.023</td><td>−0.034 <small>[−0.50,0.41]</small></td><td>−0.029</td><td>0.441</td><td>0.197</td><td>0.179 <small>[0.12,0.23]</small></td><td>0.161</td></tr>
+                  <tr><th>Ola</th><td>0.064</td><td>0.088 <small>[−0.23,0.39]</small></td><td>0.076</td><td>0.187</td><td>–</td><td>–</td><td>–</td></tr>
+                  <tr><th>Baichuan-Omni-1.5</th><td>0.162</td><td>0.190 <small>[−0.06,0.39]</small></td><td>0.170</td><td>0.116</td><td>0.022</td><td>0.007 <small>[−0.05,0.06]</small></td><td>0.007</td></tr>
+                  <tr><th>MiniCPM-o-2.6</th><td>0.019</td><td>0.070 <small>[−0.19,0.35]</small></td><td>0.060</td><td>0.213</td><td>0.184</td><td>0.185 <small>[0.13,0.24]</small></td><td>0.165</td></tr>
+                  <tr><th>MiniCPM-o-4.5</th><td>0.290</td><td>0.243 <small>[−0.33,0.68]</small></td><td>0.261</td><td>0.621</td><td>0.221</td><td>0.226 <small>[0.11,0.36]</small></td><td>0.173</td></tr>
+                  <tr class="ours"><th>Ours</th><td>0.346</td><td>0.351 <small>[0.06,0.56]</small></td><td>0.292</td><td>0.018</td><td>0.269</td><td>0.289 <small>[0.24,0.34]</small></td><td>0.216</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <figcaption><strong>Table 2.</strong> Out-of-domain comparison on the Cross-Course Evaluation Dataset and SpeechOcean762 without target-domain supervision or parameter updates. Brackets report 95% bootstrap confidence intervals. Bootstrap resampling is performed over presentations for the cross-course dataset and over utterances for SpeechOcean762. Best and second-best results are shown in bold and underlined. Dashes denote undefined correlations caused by constant predictions.</figcaption>
+          </figure>
+        </div>
+
+        <div class="experiment-label ablation-label reveal"><span>Ablation study</span><i></i></div>
+        <div class="comparison-tables ablation-tables">
+          <figure class="paper-table-card ablation-paper-table reveal">
+            <div class="paper-table-scroll">
+              <table class="comparison-table-three">
+                <thead>
+                  <tr><th rowspan="2">Configuration</th><th colspan="7">Enabled Modules</th><th colspan="3">Evaluation Metrics</th></tr>
+                  <tr><th>MEE</th><th>ER</th><th>MACG</th><th>SFT</th><th>PO</th><th>EDA</th><th>RFC</th><th>rho&#8593;</th><th>MAE&#8595;</th><th>AUROC&#8593;</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Transcript-only judge</th><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.374</td><td>0.86</td><td>0.499</td></tr>
+                  <tr><th>Multimodal Evidence Extraction</th><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.633</td><td>0.62</td><td>0.499</td></tr>
+                  <tr><th>+ Evidence Reliability</th><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.704</td><td>0.53</td><td>0.548</td></tr>
+                  <tr><th>+ Multi-Agent Collaboration Graph</th><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.722</td><td>0.38</td><td>0.548</td></tr>
+                  <tr><th>Fixed-Regressor Alignment</th><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.623</td><td>0.32</td><td>0.548</td></tr>
+                  <tr><th>RC-MEPO (SFT)</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>0.767±0.013</td><td>0.313±0.006</td><td>0.548</td></tr>
+                  <tr><th>RC-MEPO (PO)</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>0.867±0.010</td><td>0.268±0.009</td><td>0.548</td></tr>
+                  <tr><th>+ Expert-Distribution Alignment</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>0.862±0.003</td><td>0.269±0.002</td><td>0.548</td></tr>
+                  <tr class="ours"><th>Ours</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.875±0.016</td><td>0.266±0.003</td><td>0.548</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <figcaption><strong>Table 3.</strong> Component ablation against the five-expert consensus. MEE denotes Multimodal Evidence Extraction, ER denotes Evidence Reliability, and MACG denotes the Multi-Agent Collaboration Graph. RC-MEPO (SFT) denotes the supervised fine-tuning stage, while RC-MEPO (PO) denotes the subsequent preference optimization stage. EDA and RFC denote Expert-Distribution Alignment and the Rubric-Following Constraint. The fixed regressor serves only as an aggregation control. The final four rows report mean ± standard deviation over three training seeds.</figcaption>
+          </figure>
+        </div>
+
+        <div class="experiment-label additional-label reveal"><span>Additional analysis</span><i></i></div>
+        <div class="additional-tables">
+          <figure class="paper-table-card additional-paper-table table-four reveal">
+            <div class="paper-table-scroll"><table>
+              <thead><tr><th>Metric</th><th>RC-MEPO</th><th>RC-MEPO + EDA</th><th>Ours</th></tr></thead>
+              <tbody>
+                <tr><th>D<sub>KL</sub> (q<sub>d</sub> || p<sub>θ</sub>)</th><td>2.597±0.294</td><td>2.491±0.271</td><td>1.744±0.674</td></tr>
+                <tr><th>Brier score</th><td>0.574±0.053</td><td>0.537±0.050</td><td>0.394±0.111</td></tr>
+                <tr><th>TV distance</th><td>0.600±0.024</td><td>0.569±0.026</td><td>0.509±0.050</td></tr>
+                <tr><th>Spread gap</th><td>0.672±0.004</td><td>0.623±0.011</td><td>0.656±0.014</td></tr>
+                <tr><th>Mean absolute error</th><td>0.778±0.030</td><td>0.708±0.036</td><td>0.668±0.043</td></tr>
+              </tbody>
+            </table></div>
+            <figcaption><strong>Table 4.</strong> Distributional alignment between model and confidence-weighted expert score distributions on held-out presentation-dimension pairs. Values are mean ± standard deviation over three seeds, and lower is better. Best and second-best are shown in bold and underlined.</figcaption>
+          </figure>
+
+          <figure class="paper-table-card additional-paper-table reveal">
+            <div class="paper-table-scroll"><table>
+              <thead><tr><th>Configuration</th><th>Mean-dim. ρ↑</th><th>α↑</th><th>SDR→1</th></tr></thead>
+              <tbody>
+                <tr><th>RC-MEPO</th><td>0.629±0.045</td><td>0.630±0.001</td><td>0.746±0.013</td></tr>
+                <tr><th>RC-MEPO + EDA</th><td>0.678±0.009</td><td>0.630±0.000</td><td>0.762±0.000</td></tr>
+                <tr class="ours"><th>Ours</th><td>0.682±0.015</td><td>0.630±0.001</td><td>0.768±0.003</td></tr>
+              </tbody>
+            </table></div>
+            <figcaption><strong>Table 5.</strong> Cross-seed stability of RC-MEPO variants. Mean-dim. ρ averages Spearman correlation across the eight scoring dimensions. Values are mean ± standard deviation over three seeds. Best and second-best are shown in bold and underlined.</figcaption>
+          </figure>
+
+          <figure class="paper-table-card additional-paper-table table-six reveal">
+            <div class="paper-table-scroll"><table>
+              <thead>
+                <tr><th rowspan="2">Reliability signal</th><th colspan="3">Retained-set ρ↑</th><th rowspan="2">ρ&#772;<sub>sel</sub> ↑</th></tr>
+                <tr><th>100%</th><th>75%</th><th>50%</th></tr>
+              </thead>
+              <tbody>
+                <tr><th>LLM verbalized confidence</th><td>0.661</td><td>0.612</td><td>0.532</td><td>0.616</td></tr>
+                <tr><th>LLM score self-consistency</th><td>0.661</td><td>0.623</td><td>0.643</td><td>0.647</td></tr>
+                <tr><th>Audio softmax confidence</th><td>0.661</td><td>0.599</td><td>0.536</td><td>0.587</td></tr>
+                <tr class="ours"><th>Evidence Reliability (ER)</th><td>0.661</td><td>0.685</td><td>0.706</td><td>0.688</td></tr>
+              </tbody>
+            </table></div>
+            <figcaption><strong>Table 6.</strong> Reliability ranking across three speech-related dimensions of the MEPA dataset. Retained-set Spearman’s ρ is reported at different coverage levels, with ρ&#772;<sub>sel</sub> summarizing performance across the coverage range. Best and second-best results are shown in bold and underlined.</figcaption>
+          </figure>
+
+          <figure class="paper-table-card additional-paper-table reveal">
+            <div class="paper-table-scroll"><table>
+              <thead><tr><th>Metric</th><th>RFC-off</th><th class="col-ours">RFC-on</th></tr></thead>
+              <tbody>
+                <tr><th>Strict consistency ↑</th><td>54.4±11.5%</td><td class="col-ours">73.5±13.3%</td></tr>
+                <tr><th>Loose consistency ↑</th><td>40.0±12.8%</td><td class="col-ours">83.1±3.5%</td></tr>
+                <tr><th>Δ<sub>strict</sub> ↑</th><td>0.041±0.047</td><td class="col-ours">0.121±0.024</td></tr>
+                <tr><th>Δ<sub>loose</sub> ↑</th><td>0.037±0.014</td><td class="col-ours">0.161±0.009</td></tr>
+              </tbody>
+            </table></div>
+            <figcaption><strong>Table 7.</strong> Rubric-following analysis of RFC on held-out evaluation presentation samples. Results are reported as mean ± standard deviation over three seeds, and higher is better.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-section humaneval-section" id="human-eval" aria-labelledby="humaneval-title">
+      <div class="section-shell section-grid">
+        <header class="section-heading reveal">
+          <h2 id="humaneval-title">Human Study</h2>
+          <p class="section-lede">To complement the automatic evaluation, we conduct two human studies that examine assessment quality and agreement with audience judgments.</p>
+        </header>
+
+        <div class="humaneval-highlights reveal">
+          <div class="he-stat"><span class="he-label">Agreement with expert scores</span><span class="he-value">4.08<em>highest competing 2.88</em></span></div>
+          <div class="he-stat"><span class="he-label">Dimensional discrimination</span><span class="he-value">3.42<em>highest competing 2.43</em></span></div>
+          <div class="he-stat"><span class="he-label">Rubric adherence</span><span class="he-value">3.77<em>highest competing 2.73</em></span></div>
+        </div>
+        <p class="he-note reveal">On MEPA, 10 evaluators rate anonymized assessments for six held-out presentations on a five-point scale, covering agreement with expert scores, discrimination between stronger and weaker presentation dimensions, and adherence of the score and rationale to the supplied rubric.</p>
+
+        <figure class="humaneval-figure reveal">
+          <div class="he-figs">
+            <img src="figs/human_eval_1.png" alt="Human ratings on MEPA: expert agreement, dimensional discrimination, and rubric adherence across models" loading="lazy">
+            <img src="figs/human_eval_2.png" alt="Cross-course audience agreement across four communication axes" loading="lazy">
+          </div>
+          <figcaption><strong>Figure 4.</strong> Human evaluation on MEPA and Cross-Course Evaluation Dataset. Left: agreement comparison with expert scores, dimensional discrimination, and rubric adherence for competing models. Right: Spearman correlation between model predictions and ratings from live audience members across vocal delivery, non-vocal delivery, visual communication, and overall performance.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="paper-section summary-section" id="summary" aria-labelledby="conclusion-title">
+      <div class="section-shell section-grid">
+        <header class="section-heading reveal">
+          <h2 id="conclusion-title">Conclusion</h2>
+        </header>
+        <div class="abstract-copy reveal">
+          <p>We introduced <strong>AIMPACT</strong>, an evidence-grounded presentation assessment framework that combines an <strong>Evidence-to-Judgment Multi-Agent</strong> method with a <strong>Multi-Expert Presentation Assessment Dataset</strong>. Across in-domain assessment, out-of-domain assessment, and complementary human and diagnostic analyses, AIMPACT achieves the strongest expert alignment among comparable-scale MLLMs and remains competitive with substantially larger proprietary models, while generalizing to unseen presentation data and different scoring standards.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p class="footer-title"><strong>AIMPACT</strong><span>An Evidence-Grounded Multi-Agent Framework for Automated Presentation Assessment</span></p>
+    <div class="footer-links"><span class="footer-soon">Code &amp; data upon publication</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="data.js?v=1"></script>
+  <script src="script.js?v=21"></script>
+</body>
+</html>

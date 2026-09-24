@@ -1,0 +1,739 @@
+{
+ "dimensions": [
+  "Fluency",
+  "Prosody",
+  "Pronunciation",
+  "Language",
+  "Non-vocal",
+  "Visual design",
+  "Slide content"
+ ],
+ "methods": [
+  "Expert consensus",
+  "AIMPACT (ours)",
+  "Gemini-3.1-Pro",
+  "Xiaomi-MiMo-v2.5",
+  "Qwen3-Omni-Thinking",
+  "Qwen3-Omni-Instruct",
+  "MiniCPM-o-4.5",
+  "MiniCPM-o-2.6"
+ ],
+ "presentations": {
+  "14": {
+   "Expert consensus": [
+    4.2,
+    4.4,
+    3.6,
+    4.4,
+    5.0,
+    3.8,
+    4.1,
+    4.2
+   ],
+   "AIMPACT (ours)": [
+    4.1,
+    4.5,
+    4.5,
+    4.4,
+    4.3,
+    4.3,
+    4.3,
+    4.3
+   ],
+   "Gemini-3.1-Pro": [
+    3.5,
+    3.5,
+    4.0,
+    4.0,
+    3.5,
+    4.0,
+    3.5,
+    3.5
+   ],
+   "Xiaomi-MiMo-v2.5": [
+    3.0,
+    3.5,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    4.5,
+    4.0
+   ],
+   "Qwen3-Omni-Thinking": [
+    4.5,
+    4.5,
+    4.5,
+    4.5,
+    4.5,
+    4.5,
+    4.5,
+    4.5
+   ],
+   "Qwen3-Omni-Instruct": [
+    3.5,
+    4.0,
+    4.5,
+    4.5,
+    4.0,
+    4.5,
+    4.5,
+    4.5
+   ],
+   "MiniCPM-o-4.5": [
+    3.8,
+    4.5,
+    4.8,
+    4.7,
+    4.5,
+    4.5,
+    4.5,
+    4.5
+   ],
+   "MiniCPM-o-2.6": [
+    1.9,
+    2.8,
+    4.5,
+    4.6,
+    3.0,
+    4.7,
+    4.0,
+    3.0
+   ]
+  },
+  "21": {
+   "Expert consensus": [
+    3.4,
+    2.6,
+    3.2,
+    3.4,
+    1.8,
+    2.6,
+    2.8,
+    2.2
+   ],
+   "AIMPACT (ours)": [
+    2.7,
+    2.5,
+    2.8,
+    3.1,
+    1.8,
+    2.6,
+    2.7,
+    2.6
+   ],
+   "Gemini-3.1-Pro": [
+    2.5,
+    3.0,
+    3.0,
+    3.0,
+    2.5,
+    3.5,
+    3.5,
+    3.0
+   ],
+   "Xiaomi-MiMo-v2.5": [
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    2.0,
+    4.0,
+    4.0,
+    3.0
+   ],
+   "Qwen3-Omni-Thinking": [
+    2.0,
+    2.0,
+    3.0,
+    3.0,
+    2.0,
+    5.0,
+    5.0,
+    3.0
+   ],
+   "Qwen3-Omni-Instruct": [
+    2.5,
+    2.5,
+    3.0,
+    3.5,
+    3.5,
+    4.5,
+    4.5,
+    3.5
+   ],
+   "MiniCPM-o-4.5": [
+    4.0,
+    3.5,
+    4.0,
+    4.5,
+    4.0,
+    4.5,
+    4.5,
+    4.3
+   ],
+   "MiniCPM-o-2.6": [
+    1.9,
+    2.8,
+    3.5,
+    4.7,
+    4.0,
+    3.0,
+    4.6,
+    3.0
+   ]
+  },
+  "22": {
+   "Expert consensus": [
+    3.8,
+    3.8,
+    3.4,
+    3.6,
+    3.0,
+    3.6,
+    4.0,
+    3.2
+   ],
+   "AIMPACT (ours)": [
+    3.4,
+    3.6,
+    4.0,
+    3.6,
+    2.6,
+    3.8,
+    3.8,
+    3.4
+   ],
+   "Gemini-3.1-Pro": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    2.5,
+    3.5,
+    3.5,
+    3.0
+   ],
+   "Xiaomi-MiMo-v2.5": [
+    2.0,
+    3.0,
+    4.0,
+    3.0,
+    3.0,
+    4.0,
+    3.0,
+    3.0
+   ],
+   "Qwen3-Omni-Thinking": [
+    3.0,
+    2.5,
+    3.0,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    3.5
+   ],
+   "Qwen3-Omni-Instruct": [
+    3.0,
+    3.0,
+    3.5,
+    4.0,
+    4.0,
+    4.0,
+    4.5,
+    4.0
+   ],
+   "MiniCPM-o-4.5": [
+    2.5,
+    3.5,
+    4.5,
+    4.5,
+    4.0,
+    4.5,
+    4.5,
+    4.2
+   ],
+   "MiniCPM-o-2.6": [
+    1.7,
+    2.8,
+    3.5,
+    3.6,
+    4.0,
+    4.0,
+    4.9,
+    3.0
+   ]
+  },
+  "24": {
+   "Expert consensus": [
+    3.6,
+    3.6,
+    3.6,
+    3.6,
+    1.8,
+    3.6,
+    3.2,
+    3.0
+   ],
+   "AIMPACT (ours)": [
+    3.2,
+    3.3,
+    3.2,
+    3.5,
+    3.0,
+    3.4,
+    3.5,
+    3.2
+   ],
+   "Gemini-3.1-Pro": [
+    3.0,
+    3.0,
+    3.5,
+    3.0,
+    3.0,
+    3.5,
+    3.5,
+    3.0
+   ],
+   "Xiaomi-MiMo-v2.5": [
+    2.0,
+    3.0,
+    2.0,
+    2.0,
+    3.0,
+    5.0,
+    3.0,
+    3.0
+   ],
+   "Qwen3-Omni-Thinking": [
+    2.0,
+    2.0,
+    3.0,
+    2.0,
+    3.0,
+    4.0,
+    4.0,
+    2.0
+   ],
+   "Qwen3-Omni-Instruct": [
+    2.5,
+    2.5,
+    3.0,
+    3.0,
+    3.5,
+    4.0,
+    4.0,
+    3.0
+   ],
+   "MiniCPM-o-4.5": [
+    3.0,
+    3.5,
+    4.0,
+    4.0,
+    3.5,
+    4.0,
+    4.5,
+    3.8
+   ],
+   "MiniCPM-o-2.6": [
+    1.7,
+    2.8,
+    4.5,
+    4.0,
+    3.0,
+    3.6,
+    4.9,
+    3.0
+   ]
+  },
+  "25": {
+   "Expert consensus": [
+    4.2,
+    4.2,
+    3.8,
+    4.2,
+    3.6,
+    3.8,
+    4.0,
+    3.8
+   ],
+   "AIMPACT (ours)": [
+    3.6,
+    4.0,
+    3.8,
+    3.9,
+    3.1,
+    3.5,
+    3.6,
+    3.6
+   ],
+   "Gemini-3.1-Pro": [
+    2.5,
+    3.0,
+    3.0,
+    3.0,
+    2.5,
+    3.5,
+    3.5,
+    3.0
+   ],
+   "Xiaomi-MiMo-v2.5": [
+    2.0,
+    3.0,
+    2.0,
+    2.0,
+    2.0,
+    4.0,
+    4.0,
+    2.5
+   ],
+   "Qwen3-Omni-Thinking": [
+    2.0,
+    2.0,
+    2.0,
+    3.0,
+    2.0,
+    4.0,
+    4.0,
+    3.0
+   ],
+   "Qwen3-Omni-Instruct": [
+    3.0,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    5.0,
+    4.0
+   ],
+   "MiniCPM-o-4.5": [
+    4.0,
+    3.5,
+    4.0,
+    4.5,
+    4.0,
+    4.5,
+    4.5,
+    4.2
+   ],
+   "MiniCPM-o-2.6": [
+    1.0,
+    2.0,
+    3.5,
+    4.0,
+    4.0,
+    3.0,
+    4.0,
+    3.0
+   ]
+  },
+  "27": {
+   "Expert consensus": [
+    4.8,
+    4.2,
+    4.4,
+    4.8,
+    4.2,
+    4.4,
+    4.2,
+    4.0
+   ],
+   "AIMPACT (ours)": [
+    4.2,
+    4.5,
+    4.3,
+    4.1,
+    4.2,
+    3.7,
+    3.9,
+    4.2
+   ],
+   "Gemini-3.1-Pro": [
+    3.5,
+    3.0,
+    3.5,
+    3.5,
+    3.0,
+    3.5,
+    3.5,
+    3.5
+   ],
+   "Xiaomi-MiMo-v2.5": [
+    3.5,
+    3.0,
+    3.0,
+    4.0,
+    3.5,
+    4.0,
+    4.5,
+    3.5
+   ],
+   "Qwen3-Omni-Thinking": [
+    2.0,
+    2.0,
+    3.0,
+    2.0,
+    3.0,
+    5.0,
+    5.0,
+    3.0
+   ],
+   "Qwen3-Omni-Instruct": [
+    3.5,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.5,
+    4.0
+   ],
+   "MiniCPM-o-4.5": [
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.5,
+    4.5,
+    4.2
+   ],
+   "MiniCPM-o-2.6": [
+    1.7,
+    2.8,
+    4.5,
+    4.6,
+    3.0,
+    4.9,
+    4.0,
+    3.0
+   ]
+  }
+ },
+ "feedback": {
+  "14": [
+   {
+    "dimension": "Fluency",
+    "score": "4.13",
+    "text": "Fluency scored 4.13, reflecting generally fluent delivery with minimal hesitation. The average pause duration was 0.76 seconds, and the filler rate was very low at 0.02. There were no long pauses, and the hesitation rate was 1.2 per minute, indicating smooth and natural speech."
+   },
+   {
+    "dimension": "Prosody",
+    "score": "4.53",
+    "text": "Prosody received a high score of 4.53, showing excellent vocal variety and expressiveness. The pitch variance was 1659.9, with a wide pitch range of 196.4 Hz. The inflection rate was 0.459, and there were 9.1 emphasis events, indicating strong expressiveness and engagement."
+   },
+   {
+    "dimension": "Pronunciation",
+    "score": "4.55",
+    "text": "Pronunciation scored 4.55, reflecting excellent clarity and articulation. However, there were 8 severely unclear words, and some words were rushed (14%). The articulation rate was inconsistent (CV=0.65), which could affect comprehension."
+   },
+   {
+    "dimension": "Language",
+    "score": "4.41",
+    "text": "Language scored 4.41, with clean filler rate (0.015), moderate lexical density (0.505), and average vocabulary sophistication (0.149). The content was logically connected with clear problem-solution structure, and the average clause length was 18.7 words, showing fluent and complex sentences."
+   },
+   {
+    "dimension": "Non-vocal",
+    "score": "4.34",
+    "text": "Non-vocal delivery scored 4.34, with strong body delivery (4.75) and facial expression (4.84). However, eye contact was limited, with an average audience gaze ratio of 0.115. There was also excessive fidgeting and over-intense expressions, which could detract from the message."
+   },
+   {
+    "dimension": "Visual design",
+    "score": "4.29",
+    "text": "Visual design scored 4.29, with limited visual variety. Only 8% of slides had images, and the color palette was minimal (2 colors). Layout consistency was low (0.278), and there was a lack of visual elements to support the content."
+   },
+   {
+    "dimension": "Slide content",
+    "score": "4.33",
+    "text": "Slide content scored 4.33, with good text content. However, slides were too sparse (average 8 words per slide), and there was inconsistent bullet usage and title consistency. Adding more visual elements and improving slide structure could enhance clarity."
+   }
+  ],
+  "21": [
+   {
+    "dimension": "Fluency",
+    "score": "2.69",
+    "text": "Fluency scored 2.69 due to a high hesitation rate (1.4 hesitations per minute) and a moderate speech rate (2.11 words per second). The average pause duration was 0.83 seconds, and there were some long pauses (1.33 seconds). These factors indicate a need for more consistent pacing and confidence in delivery."
+   },
+   {
+    "dimension": "Prosody",
+    "score": "2.49",
+    "text": "Prosody scored 2.49 due to limited pitch variation (pitch_std=20.6 Hz) and a relatively flat pitch range (130.9 Hz). The inflection rate was moderate (0.464 changes per second), but the overall delivery approached monotone, which can reduce engagement and clarity."
+   },
+   {
+    "dimension": "Pronunciation",
+    "score": "2.84",
+    "text": "Pronunciation scored 2.84 due to significant clarity issues, with 17% of words being unclear and 29 severely unclear words. The articulation speed was inconsistent (cv=0.72), and there were some rushed words (5.9%). These issues suggest a need for more deliberate and consistent articulation."
+   },
+   {
+    "dimension": "Language",
+    "score": "3.1",
+    "text": "Language scored 3.1, reflecting strong vocabulary and coherent explanations. The filler rate was very low (0.011), and the lexical density was moderate (0.534). However, the discourse structure was minimal (0.008), indicating a need for more connective language to enhance flow and coherence."
+   },
+   {
+    "dimension": "Non-vocal",
+    "score": "1.8",
+    "text": "Non-vocal delivery scored 1.8 due to very low audience gaze (audience_ratio=0.00) and uneven gaze distribution. While body delivery and facial expression were strong, the lack of eye contact significantly impacted engagement and connection with the audience."
+   },
+   {
+    "dimension": "Visual design",
+    "score": "2.62",
+    "text": "Visual design scored 2.62 due to limited visual variety (only 2 colors in the palette) and inconsistent layouts (layout_consistency=0.623). Several slides were text-only (40%), and there was minimal use of images or charts, which could be improved for better visual support."
+   },
+   {
+    "dimension": "Slide content",
+    "score": "2.67",
+    "text": "Slide content scored 2.67 due to inconsistent bullet usage (bullet_usage_ratio=0.1) and title consistency (title_consistency=0.335). While the average words per slide were manageable (22.0), some slides had excessive text (max_words_on_slide=74), which could be streamlined for better readability."
+   }
+  ],
+  "22": [
+   {
+    "dimension": "Fluency",
+    "score": "3.37",
+    "text": "Fluency scored 3.37 due to an average filler rate of 0.063 and a hesitation rate of 3.8 per minute. While these are within acceptable ranges, there is potential to reduce filler words and improve speech flow for a more polished delivery."
+   },
+   {
+    "dimension": "Prosody",
+    "score": "3.65",
+    "text": "Prosody received a score of 3.65, reflecting excellent vocal variety with a pitch variance of 1493.0 and a pitch range of 184.9. The high inflection rate of 0.504 and emphasis events of 9.0 indicate strong expressiveness and engagement."
+   },
+   {
+    "dimension": "Pronunciation",
+    "score": "4.01",
+    "text": "Pronunciation scored 4.01, with an average content confidence of 0.941. However, there were 15 severely unclear words and very inconsistent articulation speed (CV=0.76), which slightly impacted clarity."
+   },
+   {
+    "dimension": "Language",
+    "score": "3.63",
+    "text": "Language scored 3.63, with a lexical density of 0.488 and a filler rate of 0.034. While the content was coherent and technically sound, the low MTLD (54.8) and minimal discourse structure (0.003) suggest opportunities to enhance vocabulary variety and connective phrases."
+   },
+   {
+    "dimension": "Non-vocal",
+    "score": "2.63",
+    "text": "Non-vocal delivery scored 2.63 due to a very low audience gaze ratio of 0.00 across the entire presentation. While body delivery and facial expression were strong, the lack of eye contact significantly impacted engagement and connection with the audience."
+   },
+   {
+    "dimension": "Visual design",
+    "score": "3.75",
+    "text": "Visual design scored 3.75, with an image usage ratio of 0.556 and an average of 1.89 visual elements per slide. However, the minimal color palette (0 colors) and limited font variety (1 font) reduced visual appeal and clarity."
+   },
+   {
+    "dimension": "Slide content",
+    "score": "3.84",
+    "text": "Slide content scored 3.84, with an average of 15.4 words per slide and no excessive text. However, inconsistent title lengths and a bullet usage ratio of 0.444 suggest minor improvements in slide formatting and structure."
+   }
+  ],
+  "24": [
+   {
+    "dimension": "Fluency",
+    "score": "3.17",
+    "text": "Fluency scored 3.17 due to an average filler rate of 0.052 and hesitations of 3.1 per minute. While these are moderate, they slightly disrupted the flow of your delivery."
+   },
+   {
+    "dimension": "Prosody",
+    "score": "3.28",
+    "text": "Prosody scored 3.28 with a pitch variance of 649.3 and a pitch range of 159.3. These values indicate moderate variation, but there is room to enhance expressiveness and emotional engagement."
+   },
+   {
+    "dimension": "Pronunciation",
+    "score": "3.21",
+    "text": "Pronunciation scored 3.21 with 11% of words being unclear and 22 severely unclear words. The inconsistent articulation speed (CV=0.74) also affected clarity, suggesting a need for more consistent pacing and clearer articulation."
+   },
+   {
+    "dimension": "Language",
+    "score": "3.45",
+    "text": "Language scored 3.45 with a moderate lexical density of 0.503 and a clean filler rate of 0.026. While your vocabulary was appropriate for the domain, the lack of clear transitions and repetitive phrasing limited the score."
+   },
+   {
+    "dimension": "Non-vocal",
+    "score": "3.03",
+    "text": "Non-vocal delivery scored 3.03 due to very low audience gaze (average ratio of 0.025) and uneven gaze distribution. These issues significantly impacted engagement and connection with the audience."
+   },
+   {
+    "dimension": "Visual design",
+    "score": "3.37",
+    "text": "Visual design scored 3.37 with a consistent use of images (100% image usage) and a good font variety. However, the color palette could be improved (only 2 colors used), and layout consistency was low (consistency score of 0.339)."
+   },
+   {
+    "dimension": "Slide content",
+    "score": "3.5",
+    "text": "Slide content scored 3.5 with an average of 13 words per slide and no excessive text. However, bullet usage was inconsistent across slides, which could be improved for better readability and structure."
+   }
+  ],
+  "25": [
+   {
+    "dimension": "Fluency",
+    "score": "3.63",
+    "text": "Fluency scored 3.63 due to a moderate filler rate (0.042 fillers per second) and average pause duration of 0.75 seconds. While the overall hesitation rate was 2.7 per minute, there was one instance of a very long pause (9.2 seconds) at the beginning, which disrupted the flow."
+   },
+   {
+    "dimension": "Prosody",
+    "score": "4.03",
+    "text": "Prosody received a high score of 4.03, reflecting good pitch variation with a standard deviation of 34.17 Hz and a pitch range of 144.6 Hz. The inflection rate was 0.092, indicating natural intonation. However, there was a noted limitation in pitch inflections."
+   },
+   {
+    "dimension": "Pronunciation",
+    "score": "3.78",
+    "text": "Pronunciation scored 3.78 with an average content confidence of 0.934. However, there were 23 severely unclear words and 9% of words with low clarity. The articulation speed was inconsistent (cv=0.58), which affected overall clarity."
+   },
+   {
+    "dimension": "Language",
+    "score": "3.85",
+    "text": "Language scored 3.85, with a moderate lexical density (0.529) and average vocabulary sophistication (0.117). The transcript had minimal fillers (0.018), but there were several technical errors and repetitive phrasing, which slightly hindered clarity."
+   },
+   {
+    "dimension": "Non-vocal",
+    "score": "3.07",
+    "text": "Non-vocal delivery scored 3.07 due to low audience gaze (average ratio of 0.059), uneven gaze distribution, and over-intense facial expressions. Eye contact was limited, and the facial expression was too intense, which detracted from the overall engagement."
+   },
+   {
+    "dimension": "Visual design",
+    "score": "3.5",
+    "text": "Visual design scored 3.5 due to minimal visual elements (12% of slides had images), limited font variety (4 fonts), and inconsistent layout across slides. Some slides were text-only, which could have been enhanced with more graphics or images."
+   },
+   {
+    "dimension": "Slide content",
+    "score": "3.6",
+    "text": "Slide content scored 3.6 with an average of 17 words per slide and no overloaded slides. However, there was somewhat inconsistent title usage, which could be improved for better clarity and structure."
+   }
+  ],
+  "27": [
+   {
+    "dimension": "Fluency",
+    "score": "4.21",
+    "text": "Fluency scored 4.21 due to a moderate average pause duration of 1.38 seconds and a low filler rate of 0.037. However, there were instances of very long pauses (up to 20.9 seconds) that disrupted the flow, particularly in the 240-270s time window."
+   },
+   {
+    "dimension": "Prosody",
+    "score": "4.53",
+    "text": "Prosody received a high score of 4.53, reflecting excellent vocal variety with a pitch variance of 1585.4 and a pitch range of 181.8. The delivery was expressive with a high inflection rate of 0.296, showing strong engagement."
+   },
+   {
+    "dimension": "Pronunciation",
+    "score": "4.33",
+    "text": "Pronunciation scored 4.33 with an average articulation rate of 3.14. However, there were 23 severely unclear words, some words were rushed (11%), and there was inconsistent articulation speed (CV=0.60)."
+   },
+   {
+    "dimension": "Language",
+    "score": "4.13",
+    "text": "Language scored 4.13, supported by a clean filler rate of 0.024 and moderate lexical density of 0.516. While the vocabulary was appropriate for the domain, the low discourse structure score (0.008) and some awkward phrasing indicate minor coherence issues."
+   },
+   {
+    "dimension": "Non-vocal",
+    "score": "4.15",
+    "text": "Non-vocal delivery scored 4.15, with body delivery being strong (score: 5.0) and facial expression being highly engaged (score: 4.83). However, eye contact was limited, with an average audience gaze ratio of 8.9%, which significantly impacted engagement."
+   },
+   {
+    "dimension": "Visual design",
+    "score": "3.67",
+    "text": "Visual design scored 3.67 due to a minimal color palette (0 colors) and limited font variety (1 font). While the layout was consistent (0.897), the lack of visual diversity and color contrast could be improved."
+   },
+   {
+    "dimension": "Slide content",
+    "score": "3.85",
+    "text": "Slide content scored 3.85 with an average of 16.9 words per slide and no overloaded slides. However, the minimal bullet structure (avg: 1.6) suggests opportunities for more structured and engaging content."
+   }
+  ]
+ }
+}
